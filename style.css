@@ -62,10 +62,15 @@
 #resultado{
     background-color: white;
     width: 215px;
-    height: 50px;
+    height: 25px;
     margin: 5px;
     font-size: 25px;
     color: black;
     text-align: right;
     padding: 5px;
+    word-wrap: break-word; /*    */
+    max-width: 215px; /* limite máximo do texto */
+    white-space: nowrap; /* removendo a quebra de linha */
+    overflow: hidden; /* removendo a barra de rolagem */
+    text-overflow: ellipsis; /* adicionando "..." ao final do texto */
 }
